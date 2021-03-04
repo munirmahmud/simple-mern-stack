@@ -9,7 +9,11 @@ const PORT = process.env.PORT;
 
 const mount = async (app: Application) => {
   const db = await connectDatabase();
-  const server = new ApolloServer({ typeDefs, resolvers });
+  const server = new ApolloServer({
+    typeDefs,
+    resolvers,
+    context: () => ({ db }),
+  });
   server.applyMiddleware({ app, path: "/api" });
 
   app.get("/", (_req, res) => res.send("Home Page"));

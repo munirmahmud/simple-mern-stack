@@ -13,10 +13,10 @@ interface Listing {
 export const listings: Listing[] = [
   {
     id: "001",
-    title: "Clean and fully furnished apartment. 5 min away from CN Tower",
+    title: "Rest House. 4 Bedrooms with 2 ensuite.",
     image:
-      "https://res.cloudinary.com/munirmahmud/image/upload/v1607764372/samples/ecommerce/accessories-bag.jpg",
-    address: "3210 Scotchmere Dr W, Toronto, ON, CA",
+      "https://a0.muscache.com/im/pictures/bccf7fa8-c026-44b5-b5b9-35b955e9ebb3.jpg",
+    address: "Sylhet, Sylhet Division, Bangladesh",
     price: 10000,
     numOfGuests: 2,
     numOfBeds: 1,
@@ -25,10 +25,10 @@ export const listings: Listing[] = [
   },
   {
     id: "002",
-    title: "Luxurious home with private pool",
+    title: "Luxurious & Spacious Apartment near GEC Circle",
     image:
-      "https://res.cloudinary.com/munirmahmud/image/upload/v1607764372/samples/ecommerce/leather-bag-gray.jpg",
-    address: "100 Hollywood Hills Dr, Los Angeles, California",
+      "https://a0.muscache.com/im/pictures/4d8fdd22-4474-42b0-9e31-8b4d41e57a3a.jpg",
+    address: "Chittagong, Chittagong Division, Bangladesh",
     price: 15000,
     numOfGuests: 2,
     numOfBeds: 1,
@@ -37,10 +37,10 @@ export const listings: Listing[] = [
   },
   {
     id: "003",
-    title: "Single bedroom located in the heart of downtown San Fransisco",
+    title: "Awesome Green views and silence of the nature.",
     image:
-      "https://res.cloudinary.com/munirmahmud/image/upload/v1607764363/samples/ecommerce/analog-classic.jpg",
-    address: "200 Sunnyside Rd, San Fransisco, California",
+      "https://a0.muscache.com/im/pictures/e94162ee-29ca-4b04-bf53-3b5844214108.jpg",
+    address: "Cox's Bazar, Chittagong Division, Bangladesh",
     price: 25000,
     numOfGuests: 3,
     numOfBeds: 2,
@@ -48,15 +48,15 @@ export const listings: Listing[] = [
     rating: 3,
   },
   {
-    id: "003",
-    title: "Single bedroom located in the heart of downtown San Fransisco",
+    id: "004",
+    title: "Eco Friendly, Quite and Traditional ambience.",
     image:
-      "https://res.cloudinary.com/munirmahmud/image/upload/v1607764367/samples/ecommerce/shoes.png",
-    address: "200 Sunnyside Rd, San Fransisco, California",
-    price: 25000,
-    numOfGuests: 3,
-    numOfBeds: 2,
-    numOfBaths: 2,
-    rating: 3,
+      "https://a0.muscache.com/im/pictures/bbd61d6d-fa12-47bb-8def-109102c6b5f8.jpg",
+    address: "Sreepur Upazila, Dhaka Division, Bangladesh",
+    price: 35000,
+    numOfGuests: 6,
+    numOfBeds: 4,
+    numOfBaths: 3,
+    rating: 4,
   },
 ];
