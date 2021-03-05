@@ -1,6 +1,10 @@
 import React from "react";
 import { server } from "../../lib/api";
-import { ListingsData } from "./types";
+import {
+  DeleteListingData,
+  DeleteListingVariables,
+  ListingsData,
+} from "./types";
 
 const LISTINGS = `
   query Listings {
@@ -18,10 +22,32 @@ const LISTINGS = `
   }
 `;
 
+const DELETE_LISTING = `
+  mutation DeleteListing($id: ID!) {
+    deleteListing(id: ) {
+      id
+    }
+  }
+`;
+
 export const Listings = () => {
   const handleClick = async () => {
-    const { data } = await server.fetch<ListingsData>({ query: LISTINGS });
+    const { data } = await server.fetch<ListingsData>({
+      query: LISTINGS,
+      variables: {
+        id: "",
+      },
+    });
     console.log(data.listings);
+  };
+
+  const deleteListing = async () => {
+    const { data } = await server.fetch<
+      DeleteListingData,
+      DeleteListingVariables
+    >({
+      query: DELETE_LISTING,
+    });
   };
 
   return (
